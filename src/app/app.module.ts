@@ -10,6 +10,10 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { TeamComponent } from './team/team.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { BlogComponent } from './blog/blog.component';
+import { ContactComponent } from './contact/contact.component';
+import { SubscribeComponent } from './subscribe/subscribe.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,11 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
     PortfolioComponent,
     PricingComponent,
     TeamComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    BlogComponent,
+    ContactComponent,
+    SubscribeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule
