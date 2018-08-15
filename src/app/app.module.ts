@@ -14,6 +14,8 @@ import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { FooterComponent } from './footer/footer.component';
     BlogComponent,
     ContactComponent,
     SubscribeComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule
