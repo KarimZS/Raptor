@@ -1,7 +1,6 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
-import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { PrimaryComponent } from './primary/primary.component';
 import { ServicesComponent } from './services/services.component';
@@ -16,31 +15,28 @@ import { SubscribeComponent } from './subscribe/subscribe.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { NavigationComponent } from './navigation/navigation.component';
-import { AppRoutingModule } from './/app-routing.module';
+
+
+
+const routes: Routes = [
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
+    { path: 'home', component: HomeComponent },
+    { path: 'services', component: ServicesComponent },
+    { path: 'portfolio', component: PortfolioComponent },
+    { path: 'pricing', component: PricingComponent },
+    { path: 'team', component: TeamComponent },
+    { path: 'testimonial', component: TestimonialsComponent },
+    { path: 'blog', component: BlogComponent },
+    { path: 'contact', component: ContactComponent }
+];
+
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    PrimaryComponent,
-    ServicesComponent,
-    HowItWorksComponent,
-    PortfolioComponent,
-    PricingComponent,
-    TeamComponent,
-    TestimonialsComponent,
-    BlogComponent,
-    ContactComponent,
-    SubscribeComponent,
-    FooterComponent,
-    HeaderComponent,
-    NavigationComponent
+  imports:[
+      RouterModule.forRoot(routes)
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    exports: [
+    RouterModule
+  ]
 })
-export class AppModule { }
+export class AppRoutingModule { }
