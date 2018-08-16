@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { PrimaryComponent } from './primary/primary.component';
+import { FeaturesComponent } from './features/features.component';
 import { ServicesComponent } from './services/services.component';
 import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
@@ -22,7 +22,7 @@ import { AppRoutingModule } from './/app-routing.module';
   declarations: [
     AppComponent,
     HomeComponent,
-    PrimaryComponent,
+    FeaturesComponent,
     ServicesComponent,
     HowItWorksComponent,
     PortfolioComponent,
