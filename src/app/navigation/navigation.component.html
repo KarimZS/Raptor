@@ -1,27 +1,27 @@
             <nav role="navigation" class="navbar navbar-default">
-              <div class="navbar-header">
+              <!-- <div class="navbar-header">
                 <button id="menu_slide" aria-controls="navbar" aria-expanded="false" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
                   <span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-              </div>
-
-              <div class="collapse navbar-collapse" id="navbar">
+              </div> -->
+<!-- 
+              <div class="collapse navbar-collapse" id="navbar"> -->
 
                 <ul class="nav navbar-nav">
-                  <li><a routerLink="/home" class="js-target-scroll">Home</a></li>
-                  <li><a routerLink="/features" class="js-target-scroll">Features</a></li>
-                  <li><a routerLink="/services" class="js-target-scroll">Services</a></li>
-                  <li><a routerLink="/howitworks" class="js-target-scroll">How It Works</a></li>
-                  <li><a routerLink="/portfolio" class="js-target-scroll">Portfolio</a></li>
-                  <li><a routerLink="/pricing" class="js-target-scroll">Pricing</a></li>
-                  <li><a routerLink="/team" class="js-target-scroll">Team</a></li>
-                  <li><a routerLink="/testimonial" class="js-target-scroll">Testimonial</a></li>
-                  <li><a routerLink="/subscribe" class="js-target-scroll">Subscribe</a></li>
-                  <li><a routerLink="/blog" class="js-target-scroll">Blog</a></li>
-                  <li><a routerLink="/contact" class="js-target-scroll">Contact</a></li>
+                  <li><a routerLink="/home" (click)="getActiveTab('home')" [class.active]="activetab === 'home'">Home</a></li>
+                  <li><a routerLink="/features" (click)="getActiveTab('features')" [class.active]="activetab === 'features'">Features</a></li>
+                  <li><a routerLink="/services" (click)="getActiveTab('services')" [class.active]="activetab === 'services'">Services</a></li>
+                  <li><a routerLink="/howitworks" (click)="getActiveTab('howitworks')" [class.active]="activetab === 'howitworks'">How It Works</a></li>
+                  <li><a routerLink="/portfolio" (click)="getActiveTab('portfolio')" [class.active]="activetab === 'portfolio'">Portfolio</a></li>
+                  <li><a routerLink="/pricing" (click)="getActiveTab('pricing')" [class.active]="activetab === 'pricing'">Pricing</a></li>
+                  <li><a routerLink="/team" (click)="getActiveTab('team')" [class.active]="activetab === 'team'">Team</a></li>
+                  <li><a routerLink="/testimonial" (click)="getActiveTab('testimonial')" [class.active]="activetab === 'testimonial'">Testimonial</a></li>
+                  <li><a routerLink="/subscribe" (click)="getActiveTab('subscribe')" [class.active]="activetab === 'subscribe'">Subscribe</a></li>
+                  <li><a routerLink="/blog" (click)="getActiveTab('blog')" [class.active]="activetab === 'blog'">Blog</a></li>
+                  <li><a routerLink="/contact" (click)="getActiveTab('contact')" [class.active]="activetab === 'contact'">Contact</a></li>
                   <!-- <li class="dropdown">
                     <a href="/" class="dropdown-toggle" data-toggle="dropdown"> page  </a>
                     <ul class="dropdown-menu">
@@ -32,6 +32,6 @@
                     </ul>
                   </li> -->
                 </ul>
-              </div>
+              <!-- </div> -->
 
             </nav>
