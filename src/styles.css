@@ -1,0 +1,20 @@
+
+.footer_bottom.fourth-bg button.backtop {
+    background: #02060d none repeat scroll 0 0;
+    border: 2px solid #f6b20e;
+    border-radius: 100%;
+    color:#f6b20e;
+    float: right;
+    font-weight: 700;
+    width: 40px;
+    text-decoration: none;
+    font-size: 25px;
+    height: 40px;
+    text-align: center;
+    line-height: 36px;
+  }
+
+  .navbar ul.nav.navbar-nav li a.active {
+    background-color: #f6b20e;
+    color: #fff;
+  }

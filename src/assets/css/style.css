@@ -200,10 +200,6 @@ header {
     background-color: #f6b20e;
     color: #fff;
 }
-.navbar ul.nav.navbar-nav li a.active {
-  background-color: #f6b20e;
-  color: #fff;
-}
 
 .navbar-collapse {
   overflow-x: visible;
@@ -1858,6 +1854,7 @@ footer .footer_bottom {
   text-align: center;
   line-height: 36px;
 }
+
 .footer_bottom a {
 	color:#F6B20E;	
 }
