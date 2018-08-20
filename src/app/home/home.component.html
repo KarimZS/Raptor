@@ -9,14 +9,14 @@
 
         <div class="col-md-6">
           <div class="present">
-            <h1> Present your app in beautiful way with App Layers.</h1>
+            <h1> {{homeData.heading}}</h1>
 
-            <h5> Available on <span> App Store </span> and <b> Play Store</b> </h5>
+            <h5> {{homeData.available}}</h5>
 
             <div class="section_btn">
-              <a href="#"> <button class="btn btn-default" type="submit"> <i class="fa fa-apple" aria-hidden="true"></i> App Store</button> </a>
+              <a href="{{homeData.iosLink}}"> <button class="btn btn-default" type="submit"> <i class="fa fa-apple" aria-hidden="true"></i> App Store</button> </a>
 
-              <span> <a href="#"> <button class="btn btn-default" type="submit"><i class="fa fa-android" aria-hidden="true"></i> Play Store</button> </a> </span>
+              <span> <a href="{{homeData.andriodLink}}"> <button class="btn btn-default" type="submit"><i class="fa fa-android" aria-hidden="true"></i> Play Store</button> </a> </span>
             </div>
           </div>
         </div>
