@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BackendService } from '../backend.service';
 
 @Component({
   selector: 'app-subscribe',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SubscribeComponent implements OnInit {
 
-  constructor() { }
+  subscribeData = {};
+  constructor(private backend: BackendService) { }
 
   ngOnInit() {
+    this.subscribeData = this.getData();
   }
 
+  private getData (){
+    return this.backend.getSubscribePage();
+  }
 }

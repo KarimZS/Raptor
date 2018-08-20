@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BackendService } from '../backend.service';
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  contactData = {};
+  constructor(private backend: BackendService) { }
 
   ngOnInit() {
+    this.contactData = this.getData();
+  }
+
+  private getData (){
+    return this.backend.getContactPage();
   }
 
 }

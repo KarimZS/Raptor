@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BackendService } from '../backend.service';
 
 @Component({
   selector: 'app-team',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeamComponent implements OnInit {
 
-  constructor() { }
+  teamData = {};
+  constructor(private backend: BackendService) { }
 
   ngOnInit() {
+    this.teamData = this.getData();
   }
 
+  private getData (){
+    return this.backend.getTeamPage();
+  }
 }

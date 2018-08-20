@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BackendService } from '../backend.service';
 
 @Component({
   selector: 'app-blog',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog.component.css']
 })
 export class BlogComponent implements OnInit {
-
-  constructor() { }
+  
+  blogData = {};
+  constructor(private backend: BackendService) { }
 
   ngOnInit() {
+    this.blogData = this.getData();
   }
 
+  private getData (){
+    return this.backend.getBlogPage();
+  }
 }

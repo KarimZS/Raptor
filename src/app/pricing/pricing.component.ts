@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BackendService } from '../backend.service';
 
 @Component({
   selector: 'app-pricing',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PricingComponent implements OnInit {
 
-  constructor() { }
+  pricingData = {};
+  constructor(private backend: BackendService) { }
 
   ngOnInit() {
+    this.pricingData = this.getData();
   }
 
+  private getData (){
+    return this.backend.getPricingPage();
+  }
 }
