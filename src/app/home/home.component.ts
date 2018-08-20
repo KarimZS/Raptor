@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BackendService } from '../backend.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  homeData = {};
+  constructor(private backend: BackendService) { }
 
   ngOnInit() {
+    this.homeData = this.getData();
+  }
+
+  getData(){
+    return this.backend.getHomePage();
   }
 
 }
