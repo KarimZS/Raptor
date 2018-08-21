@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BackendService } from '../backend.service';
 
 @Component({
   selector: 'app-features',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeaturesComponent implements OnInit {
 
-  constructor() { }
+  featureData = {};
+  constructor(private backend: BackendService) { }
 
   ngOnInit() {
+    this.featureData = this.getData();
   }
 
+  private getData (){
+    return this.backend.getFeaturesPage();
+  }
 }

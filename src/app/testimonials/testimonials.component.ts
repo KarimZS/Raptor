@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BackendService } from '../backend.service';
 
 @Component({
   selector: 'app-testimonials',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestimonialsComponent implements OnInit {
 
-  constructor() { }
+  testimonialData = {};
+  constructor(private backend: BackendService) { }
 
   ngOnInit() {
+    this.testimonialData = this.getData();
   }
 
+  private getData (){
+    return this.backend.getTestimonialPage();
+  }
 }
