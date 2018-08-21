@@ -19,9 +19,27 @@ export const temp_service_result = {
    },
    howitworksPage: {
     header: {
-     title: "HOW IT WORKS",
+     title: "How Raptor Works",
      description: "App Layers offers a wide range of features with Beautiful Design & Great Functionality. Lorem Ipsum is simply dummy text"
-    }
+    },
+    instructions:[
+      {
+        img: "member_1.jpg",
+        title:"Choose a meal plan please",
+        description: "nothing yet"
+      },
+      {
+        img: "member_2.jpg",
+        title:"go to one of our restaurants",
+        description: "order your favorite meal"
+      },
+      {
+        img: "member_3.jpg",
+        title:"show app to your server",
+        description: "we cover the cost of the entree"
+      }
+    ]
+
    },
    portfolioPage: {
     header: {

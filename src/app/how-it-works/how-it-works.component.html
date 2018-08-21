@@ -9,6 +9,27 @@
           <h4>{{howitworksData.header.description}}</h4>
         </div>
 
+
+        <div class="ng-isolate-scope">
+          <div class="main-info">
+            <div class="container">
+              <div class="row">
+                <div class="main-cols ng-scope">
+
+                  <div *ngFor="let instruction of howitworksData.instructions" class="col-sm-4 ng-scope" >
+                    <div class="img-container">
+                      <img src="assets/images/{{instruction.img}}">
+                    </div>
+                    <h4 translate="" class="ng-scope">{{instruction.title}}</h4>
+                    <p translate="" class="ng-scope">{{instruction.description}}</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 
         <div class="col-md-4">
           <div class="how_it_work_m text-right">
             <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> </a>
@@ -41,7 +62,7 @@
             <a href="#"> <h5> Add to favorites </h5> </a>
             <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer </p>
           </div>
-        </div>
+        </div> -->
 
 
       </div>
