@@ -954,7 +954,7 @@ ul.breadcrumbs_m {
 /*------ present app layers-------*/
 
 section.top_banner_bg {
-  background: hsl(220, 93%, 6%) url("../images/top_banner.png") no-repeat fixed 0 0 / cover ;
+  background: hsl(220, 93%, 6%) url("../images/cooking-cuisine-delicious-941869.jpg") no-repeat fixed 0 0 / cover ;
   padding-bottom: 0;
   position: relative;
 }
@@ -966,7 +966,7 @@ section.top_banner_bg:after {
 	height:100%;
 	width:100%;
 	content:"";
-	background:rgba(1, 10, 28, 0.8);	
+	background:rgba(73, 82, 99, 0.8);	
 }
 
 .present {
