@@ -1,0 +1,57 @@
+.round-old{
+    background: hsl(0, 0%, 100%) none repeat scroll 0 0;
+    border: none;
+    border-radius: 100px;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 31px 24px;  
+      
+  }
+
+  .round-old > h3 {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 15px;
+    padding: 0 0 15px;
+
+
+    color: #d7232d;
+    text-decoration: none;
+    position: relative;
+}
+
+ .round-old > h3::before {
+    content: " ";
+    display: block;
+    width: 120%;
+    border-top: 2px solid #d7232d;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotate(-30deg);
+  } 
+
+
+  .round-old span p {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0;
+
+
+    color: #d7232d;
+    text-decoration: none;
+    position: relative;
+}
+
+ /* .round-old span p::before {
+    content: " ";
+    display: block;
+    width: 100%;
+    border-top: 2px solid #d7232d;
+    height: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotate(-7deg);
+  }  */

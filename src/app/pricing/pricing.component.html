@@ -9,28 +9,34 @@
           <h4>{{pricingData.header.description}}</h4>
         </div>
 
-        <div class="col-md-4">
+        <div *ngFor="let plan of pricingData.plans" class="col-md-4">
           <div class="table-1">
             <div class="discount">
-              <p> Save 10% </p>
+              <p> Save {{plan.savings}}% </p>
             </div>
 
-            <h3> Basic </h3>
+            <h3> {{plan.title}} </h3>
 
             <div class="price_month">
-              <span class="round">
-                <h3> $19 </h3>
+              <span class="round-old">
+                <h3> ${{plan.oldprice}} </h3>
                 <span>
-                  <p> /Month </p>
+                  <p> /Meal </p>
+                </span>
+              </span>
+              <span class="round">
+                <h3> ${{plan.price}} </h3>
+                <span>
+                  <p> /Meal </p>
                 </span>
               </span>
 
             </div>
 
             <ul>
-              <li> 1 GB Space </li>
-              <li> 10 GB Bandwidth</li>
-              <li> Enhanced Security </li>
+              <li *ngFor="let feature of plan.features"> {{feature}} </li>
+              <!-- <li> 10 GB Bandwidth</li>
+              <li> Enhanced Security </li> -->
             </ul>
 
             <div class="section_sub_btn">
@@ -38,7 +44,7 @@
             </div>
           </div>
         </div>
-
+<!-- 
         <div class="col-md-4">
           <div class="table-1">
             <div class="discount">
@@ -97,7 +103,7 @@
               <button class="btn btn-default" type="submit"> <i class="fa fa-cart-plus" aria-hidden="true"></i> Order Now</button>
             </div>
           </div>
-        </div>
+        </div> -->
 
 
       </div>

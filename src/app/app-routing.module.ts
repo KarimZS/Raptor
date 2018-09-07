@@ -16,16 +16,16 @@ import { SubscribeComponent } from './subscribe/subscribe.component';
 const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent },
-    { path: 'features', component: FeaturesComponent },
-    { path: 'services', component: ServicesComponent },
+    // { path: 'features', component: FeaturesComponent },
+    // { path: 'services', component: ServicesComponent },
     { path: 'howitworks', component: HowItWorksComponent },
-    { path: 'portfolio', component: PortfolioComponent },
+    // { path: 'portfolio', component: PortfolioComponent },
     { path: 'pricing', component: PricingComponent },
-    { path: 'team', component: TeamComponent },
-    { path: 'testimonial', component: TestimonialsComponent },
-    { path: 'subscribe', component: SubscribeComponent },
-    { path: 'blog', component: BlogComponent },
-    { path: 'contact', component: ContactComponent }
+    // { path: 'team', component: TeamComponent },
+    // { path: 'testimonial', component: TestimonialsComponent },
+    // { path: 'subscribe', component: SubscribeComponent },
+    // { path: 'blog', component: BlogComponent },
+    // { path: 'contact', component: ContactComponent }
 ];
 
 

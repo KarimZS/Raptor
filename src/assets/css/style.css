@@ -1376,7 +1376,7 @@ section.our_service_bg:after {
   background: hsl(0, 0%, 100%) none repeat scroll 0 0;
   border: none;
   border-radius: 100px;
-  display: table;
+  display: inline-block;
   margin: 0 auto;
   padding: 31px 24px;
 }
