@@ -132,7 +132,7 @@ header {
 .dropdown .dropdown-toggle::after{
  
   content: "";
-  font-family: fontawesome;
+  font-family: font-awesome;
   font-size: 10px;
   font-weight: 400;
   margin: 0 3px;
@@ -351,7 +351,7 @@ margin-bottom: 40px;
 .side_bar_heading h6::after {
   bottom: -34px;
   content: "";
-  font-family: fontawesome;
+  font-family: font-awesome;
   font-size: 30px;
   left: 0;
   margin: 0 auto;
@@ -378,7 +378,7 @@ margin-bottom: 40px;
 .side_bar_sub_heading h6::after {
   bottom: -34px;
   content: "";
-  font-family: fontawesome;
+  font-family: font-awesome;
   font-size: 30px;
   left: 0;
   margin: 0 auto;
@@ -1058,7 +1058,7 @@ section.top_banner_bg:after {
 .section_heading h2::after {
   bottom: -34px;
   content: "";
-  font-family: fontawesome;
+  font-family: font-awesome;
   font-size: 30px;
   left: 0;
   margin: 0 auto;
@@ -1148,7 +1148,7 @@ section.top_banner_bg:after {
 .section_heading.section_heading_2 h2::after {
   bottom: -34px;
   content: "";
-  font-family: fontawesome;
+  font-family: font-awesome;
   font-size: 30px;
   left: 0;
   margin: 0 auto;
@@ -1283,7 +1283,7 @@ section.our_service_bg:after {
 
 .how_it_work_m.text-right h5::before {
   content: "";
-  font-family: fontawesome;
+  font-family: font-awesome;
   font-size: 16px;
   position: absolute;
   right: -69px;
@@ -1324,7 +1324,7 @@ section.our_service_bg:after {
 
 .how_it_work_m.text-left h5::before {
   content: "";
-  font-family: fontawesome;
+  font-family: font-awesome;
   font-size: 16px;
   position: absolute;
   left: -69px;
