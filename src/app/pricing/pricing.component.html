@@ -8,14 +8,29 @@
 
           <h4>{{pricingData.header.description}}</h4>
         </div>
-
-        <div *ngFor="let plan of pricingData.plans" class="col-md-4">
+          
+          
+          <div class="button_centered" style=" margin-left: 30%;
+    margin-right: 30%;">
+            <div *ngFor="let tier of pricingData.tiers" style="padding-right: 5px;">
+                <a href="#" class="myButton">{{tier.title}} Plans</a>
+<!--              <button>{{tier.title}} Plans</button>-->
+            </div>
+<!--
+        <div class="section_heading section_heading_2">
+          <h4>{{tier.title}} Plans</h4>
+            
+        </div>
+-->
+          </div>
+           
+        <div *ngFor="let plan of activeTier.plans" class="col-md-4">
           <div class="table-1">
             <div class="discount">
               <p> Save {{plan.savings}}% </p>
             </div>
 
-            <h3> {{plan.title}} </h3>
+            <h4> {{plan.title}} </h4>
 
             <div class="price_month">
               <!-- <span class="round-old">
@@ -44,6 +59,7 @@
             </div>
           </div>
         </div>
+<!--            </div>-->
 <!-- 
         <div class="col-md-4">
           <div class="table-1">

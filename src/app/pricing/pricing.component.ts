@@ -8,11 +8,16 @@ import { BackendService } from '../backend.service';
 })
 export class PricingComponent implements OnInit {
 
-  pricingData = {};
+  pricingData = {
+      tiers:{}
+  };
+  activeTier = {};
   constructor(private backend: BackendService) { }
 
   ngOnInit() {
     this.pricingData = this.getData();
+    this.activeTier = this.pricingData.tiers[1];
+    
   }
 
   private getData (){

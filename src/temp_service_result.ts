@@ -52,29 +52,82 @@ export const temp_service_result = {
      title: "PRICING TABLE",
      description: "Enjoy dining pass no matter your budget!"
     },
-    plans:[
+    tiers:[
+        {
+        title:"Mini",
+        plans:[
+            {
+                title:"Dodo",
+                oldprice:"10",
+                price: "9 ",
+                savings: "10",
+                features:["5 meal plan","$10 Value per meal","billed monthly"]
+            },
+            {
+                title:"Raptor",
+                oldprice:"10",
+                price: "8.5",
+                savings: "15",
+                features:["10 meal plan","$10 Value per meal","billed monthly"]
+            },
+            {
+                title:"T-Rex",
+                oldprice:"10",
+                price: "8",
+                savings:"20",
+                features:["15 meal plan","$10 Value per meal","billed monthly"]
+            }]
+        },
+        {
+        title:"Regular",
+        plans:[
       {
         title:"Dodo",
-        oldprice:"10",
-        price: "8 ",
-        savings: "20",
-        features:["5 meal plan","$10 Value per meal","billed monthly"]
+        oldprice:"15",
+        price: "13.5",
+        savings: "10",
+        features:["5 meal plan","$15 Value per meal","billed monthly"]
       },
       {
         title:"Raptor",
         oldprice:"15",
+        price: "12.75",
+        savings: "15",
+        features:["10 meal plan","$15 Value per meal","billed monthly"]
+      },
+      {
+        title:"T-Rex",
+        oldprice:"15",
         price: "12",
-        savings: "20",
-        features:["5 meal plan","$15 Value per meal","billed monthly"]
+        savings:"20",
+        features:["15 meal plan","$15 Value per meal","billed monthly"]
+      }]
+    },
+    {
+        title:"Mega",
+        plans:[
+      {
+        title:"Dodo",
+        oldprice:"20",
+        price: "18",
+        savings: "10",
+        features:["5 meal plan","$20 Value per meal","billed monthly"]
+      },
+      {
+        title:"Raptor",
+        oldprice:"20",
+        price: "17",
+        savings: "15",
+        features:["10 meal plan","$20 Value per meal","billed monthly"]
       },
       {
         title:"T-Rex",
         oldprice:"20",
         price: "16",
         savings:"20",
-        features:["5 meal plan","$20 Value per meal","billed monthly"]
-      }
-    ]
+        features:["15 meal plan","$20 Value per meal","billed monthly"]
+      }]
+    }]
    },
    teamPage: {
     header: {
