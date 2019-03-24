@@ -19,6 +19,8 @@ export class PricingComponent implements OnInit {
     this.activeTier = this.pricingData.tiers[1];
     
   }
+    
+    
 
   private getData (){
     return this.backend.getPricingPage();
